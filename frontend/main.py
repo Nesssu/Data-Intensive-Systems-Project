@@ -16,30 +16,60 @@ def getLocation():
 def menu():
     while True:
         print("\n** SELECT WHAT YOU WANT TO DO NEXT")
-        print("** 1) ...")
-        print("** 2) ...")
-        print("** 3) ...")
+        print("** 1) View all available cars")
+        print("** 2) Add a car to your wishlist")
+        print("** 3) View your wishlis")
+        print("** 4) Remove a car from your wishlist")
+        print("** 5) Buy a car")
         print("** 0) Quit\n")
         choice = input("Your choice: ")
-        if choice in ["0", "1", "2", "3"]:
+        if choice in ["0", "1", "2", "3", "4", "5"]:
             return choice
         
         print("\nYour choice was not valid!! Try again!")
+        
+def ViewAllCars():
+    
+    return
+
+def ViewYourWishlist():
+    
+    return
+
+def AddCarToWishlist():
+    
+    return
+
+def RemoveCarFromWishlist():
+    
+    return
+
+def BuyACar():
+    
+    return
 
 def main():
     # 1 == Finland, 2 == USA and 3 == Japan
     location = int(getLocation())
     
+    # Connect to the database.
+    
     choice = menu()
     while choice != "0":
         if choice == "1":
-            pass
+            ViewAllCars()
         
         elif choice == "2":
-            pass
+            AddCarToWishlist()
         
         elif choice == "3":
-            pass
+            ViewYourWishlist()
+            
+        elif choice == "4":
+            RemoveCarFromWishlist()
+            
+        elif choice == "5":
+            BuyACar()
         
         choice = menu()
 
